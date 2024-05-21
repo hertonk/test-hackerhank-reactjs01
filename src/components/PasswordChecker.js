@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import PasswordStrength from "./PasswordStrength";
 
 const PasswordChecker = () => {
+
+  const [ password, setPassword ] = useState()
+
   return (
     <div className="layout-column align-items-center justify-content-center py-40 mt-100">
       <div className="card w-50 px-75 py-30">
@@ -13,7 +16,8 @@ const PasswordChecker = () => {
               id="name"
               placeholder="Enter Password"
               data-testid="passwordInput"
-              value={"password"}
+              value={password}
+              onChange={setPassword}
             />
           </div>
         </form>
@@ -23,7 +27,7 @@ const PasswordChecker = () => {
         </div>
       </div>
       <div className="w-50 py-20">
-        <PasswordStrength />
+        <PasswordStrength password={password} />
       </div>
     </div>
   );
