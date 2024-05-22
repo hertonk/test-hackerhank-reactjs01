@@ -1,11 +1,13 @@
 import React from "react";
 
-const PasswordStrength = () => {
+export function PasswordStrength({ color = "white", strength = " " }){
+
+
   return (
     <div
       className="px-5 py-5"
       style={{
-        backgroundColor: "green",
+        backgroundColor: `${color}`,
       }}
       data-testid="passwordStrengthDiv"
     >
@@ -15,10 +17,8 @@ const PasswordStrength = () => {
           textAlign: "center",
         }}
       >
-        Strong Password
+        {strength} Password
       </h4>
     </div>
   );
 };
-
-export default PasswordStrength;
