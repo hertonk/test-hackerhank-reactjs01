@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="6" failures="1" errors="0" time="1.033">
-  <testsuite name="React Password Strength Checker" errors="0" failures="1" skipped="0" timestamp="2024-05-21T23:57:16" time="0.629" tests="6">
-    <testcase classname="React Password Strength Checker Input field should be empty initially" name="React Password Strength Checker Input field should be empty initially" time="0.018">
+<testsuites name="jest tests" tests="6" failures="1" errors="0" time="0.981">
+  <testsuite name="React Password Strength Checker" errors="0" failures="1" skipped="0" timestamp="2024-05-22T01:11:10" time="0.594" tests="6">
+    <testcase classname="React Password Strength Checker Input field should be empty initially" name="React Password Strength Checker Input field should be empty initially" time="0.017">
     </testcase>
-    <testcase classname="React Password Strength Checker Password checker should initally have value of Weak Password" name="React Password Strength Checker Password checker should initally have value of Weak Password" time="0.014">
+    <testcase classname="React Password Strength Checker Password checker should initally have value of Weak Password" name="React Password Strength Checker Password checker should initally have value of Weak Password" time="0.013">
     </testcase>
-    <testcase classname="React Password Strength Checker Input field should be working properly" name="React Password Strength Checker Input field should be working properly" time="0.033">
+    <testcase classname="React Password Strength Checker Input field should be working properly" name="React Password Strength Checker Input field should be working properly" time="0.005">
     </testcase>
-    <testcase classname="React Password Strength Checker Show Password button should have current functionality" name="React Password Strength Checker Show Password button should have current functionality" time="0.005">
+    <testcase classname="React Password Strength Checker Show Password button should have current functionality" name="React Password Strength Checker Show Password button should have current functionality" time="0.004">
     </testcase>
-    <testcase classname="React Password Strength Checker Clear Password button should have current functionality" name="React Password Strength Checker Clear Password button should have current functionality" time="0.003">
+    <testcase classname="React Password Strength Checker Clear Password button should have current functionality" name="React Password Strength Checker Clear Password button should have current functionality" time="0.005">
     </testcase>
-    <testcase classname="React Password Strength Checker Password Checker should have correct funtionality" name="React Password Strength Checker Password Checker should have correct funtionality" time="0.006">
+    <testcase classname="React Password Strength Checker Password Checker should have correct funtionality" name="React Password Strength Checker Password Checker should have correct funtionality" time="0.002">
       <failure>Error: expect(element).toHaveTextContent()
 
 Expected element to have text content:

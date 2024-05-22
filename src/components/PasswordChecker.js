@@ -7,7 +7,7 @@ const PasswordChecker = () => {
   const [ showPassword, setShowPassword ] = useState(false)
   const [ score, setScore ] = useState(0)
   const [ color, setColor ] = useState('white')
-  const [ strength, setStrength ] = useState('white')
+  const [ strength, setStrength ] = useState('Weak')
   const [ verifyLength, setVerifyLength ] = useState(false)
   const [ verifyLower, setVerifyLower ] = useState(false)
   const [ verifyUpper, setVerifyUpper ] = useState(false)
@@ -23,6 +23,13 @@ const PasswordChecker = () => {
       }
     }
     
+    if(/[A-Z]/.test(password)){
+      if(!verifyUpper){
+        setScore(score+1)
+        setVerifyUpper(true)
+      }
+    }
+
     if(/[a-z]/.test(password)){
       if(!verifyLower){
         setScore(score+1)
@@ -59,6 +66,15 @@ const PasswordChecker = () => {
       setColor('green')
     }
 
+    if(password === ''){
+      setVerifyLength(false)
+      setVerifyUpper(false)
+      setVerifyLower(false)
+      setVerifyNumber(false)
+      setVerifySpecial(false)
+      setScore(0)
+    }
+
   }, [password])
 
   function handleShowPassword(){
@@ -73,7 +89,7 @@ const PasswordChecker = () => {
     <div className="layout-column align-items-center justify-content-center py-40 mt-100">
       <div className="card w-50 px-75 py-30">
         <form onSubmit={(e) => e.preventDefault()}>
-          <h2>Enter Your Password {score}</h2>
+          <h2>Enter Your Password</h2>
           <div className="layout-column mb-10">
             <input
               type={showPassword ? "text" : "password"}

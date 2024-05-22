@@ -1,7 +1,6 @@
 import React from "react";
 
-export function PasswordStrength({ color = "white", strength = " " }){
-
+export function PasswordStrength({ color = "white", strength = "Weak" }){
 
   return (
     <div
